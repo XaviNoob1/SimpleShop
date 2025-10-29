@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <!-- Header (igual que antes) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>SimpleShop</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Productos</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                    <li><a href="html/abaut.html">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#" class="cart-icon">🛒 <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Contacto -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">Estamos aquí para ayudarte. Escribe tu mensaje y te responderemos pronto.</p>
+
+            <div class="contact-grid">
+                <!-- Formulario -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivo">Motivo del mensaje</label>
+                            <textarea id="motivo" name="motivo" rows="5" placeholder="Escribe tu consulta, duda o sugerencia..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Mapa de Google -->
+                <div class="contact-map">
+                    <h3>Nuestra Ubicación</h3>
+                    <div class="map-container">
+                        <!-- Reemplaza con tu ubicación real -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.984170093584!2d-74.08674968523752!3d4.609710496675294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f990000000001%3A0x1234567890abcdef!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sus!4v1698000000000!5m2!1ses!2sus" 
+                            width="100%" 
+                            height="350" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p class="map-info">
+                        <strong>Dirección:</strong> Calle 123 #45-67, Bogotá, Colombia<br>
+                        <strong>Horario:</strong> Lunes a Viernes: 9:00 AM - 6:00 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (igual que antes) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MiTienda</h3>
+                    <p>Tu tienda online de confianza.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <p>Email: info@mitienda.com</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MiTienda. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
