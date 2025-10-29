@@ -1,0 +1,77 @@
+/* ========================================
+   FOOTER - 3 COLUMNAS HORIZONTALES
+   ======================================== */
+
+.footer {
+    background: #0a0a0a;
+    color: var(--color-text-secondary);
+    padding: 3rem 0 1.5rem;
+    border-top: 1px solid #2a2a2a;
+    font-size: 0.95rem;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* GRID DE 3 COLUMNAS */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 COLUMNAS IGUALES */
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Cada columna */
+.footer-column h3,
+.footer-column h4 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.footer-column a:hover {
+    color: var(--color-primary);
+    transform: translateX(4px);
+}
+
+/* Email y teléfono clicables */
+.footer-column a[href^="mailto:"],
+.footer-column a[href^="tel:"] {
+    color: var(--color-accent);
+}
+
+/* Línea separadora y copyright */
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #2a2a2a;
+    color: #636e72;
+    font-size: 0.9rem;
+}

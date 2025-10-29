@@ -1,0 +1,101 @@
+/* SECCIÓN: ALL PRODUCTS - TEMA OSCURO */
+.all-products {
+    padding: 5rem 0;
+    background: var(--color-bg);
+    min-height: 100vh;
+}
+
+.all-products .section-title {
+    color: var(--color-white);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.all-products .section-title::after {
+    background: var(--color-primary);
+    height: 5px;
+    width: 90px;
+    border-radius: 3px;
+}
+
+.all-products .section-subtitle {
+    color: var(--color-text-secondary);
+    font-size: 1.15rem;
+    margin-bottom: 3.5rem;
+}
+
+/* GRID */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2rem;
+}
+
+/* TARJETA */
+.product-card {
+    background: var(--color-surface);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2a2a2a;
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-primary);
+}
+
+/* IMAGEN */
+.product-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    filter: brightness(0.95);
+    transition: var(--transition);
+}
+
+.product-card:hover .product-img {
+    filter: brightness(1.05);
+    transform: scale(1.02);
+}
+
+/* TEXTOS */
+.product-title {
+    color: var(--color-white);
+    font-weight: 600;
+    margin: 1.2rem 1rem 0.4rem;
+    font-size: 1.2rem;
+}
+
+.product-price {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 1rem;
+}
+
+/* BOTÓN */
+.btn-add {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    margin: 1rem;
+    margin-top: auto;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+.btn-add:hover {
+    background: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(63, 55, 201, 0.4);
+}

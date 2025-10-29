@@ -1,0 +1,88 @@
+/* ========================================
+   HERO SECTION - CENTRADO PERFECTO
+   ======================================== */
+
+.hero {
+    position: relative;
+    min-height: 80vh;                    /* Altura grande */
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;                 /* CENTRADO VERTICAL */
+    justify-content: center;             /* CENTRADO HORIZONTAL */
+    text-align: center;
+    overflow: hidden;
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+/* Fondo sutil (opcional) */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('../img/hero-bg.jpg') center/cover no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+    filter: blur(1px);
+}
+
+/* Contenedor del contenido */
+.hero .container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Título con gradiente */
+.hero h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(90deg, #4361ee, #4895ef, #4361ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+    text-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+}
+
+/* Subtítulo */
+.hero p {
+    font-size: 1.3rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Botón */
+.btn-primary {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    padding: 1rem 2.8rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 8px 25px rgba(67, 97, 238, 0.4);
+    border: 2px solid transparent;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(67, 97, 238, 0.5);
+}
